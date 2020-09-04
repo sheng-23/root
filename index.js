@@ -26,6 +26,7 @@ git status	// 查看哪些文件修改了
 git add 文件名 | .	// 保存到本地
 git commit -m 'git代码注释'
 git push origin 远程分支名
+
 git log // 查看日志
 git checkout -b 你的分支名 origin/master	// 创建本地分支
 git branch -v 	// 查看本地分支
