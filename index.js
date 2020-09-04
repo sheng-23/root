@@ -31,8 +31,11 @@ git log // 查看日志
 git checkout -b 你的分支名 origin/master	// 创建本地分支
 git branch -v 	// 查看本地分支
 git branch -a 	// 查看远程分支
+git checkout 分支名称		// 切换分支
+
 master - 分支 (文件夹1)
 dev 文件夹2
+
 分支->	文件夹
 分支->	远程分支 本地分支
 
