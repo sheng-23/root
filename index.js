@@ -39,8 +39,10 @@ dev 文件夹2
 分支->	文件夹
 分支->	远程分支 本地分支
 
-git stash 	// 暂存
-git stash save '说明文字' 	// 暂存
-git stash list  	// 查看缓存列表
+// git stash 	// 暂存
+git stash save '说明文字'
+git stash list	// 查看缓存列表
+git stash apply 	// 	回到最近缓存
+
 
 */
