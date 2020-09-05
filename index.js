@@ -45,6 +45,12 @@ git stash list	// 查看缓存列表
 git stash apply 	// 	回到最近缓存
 git stash apply stash@{1}	// 	回到某一缓存上
 git clear 	// 清空缓存
+git diff <file> 	// 查看当前文件修改内容
+git merge 分支	 // 合并分支到当前分支
 
 
+12452154
+12452154
+12452154
+12452154
 */
