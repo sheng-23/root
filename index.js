@@ -43,6 +43,8 @@ dev 文件夹2
 git stash save '说明文字'
 git stash list	// 查看缓存列表
 git stash apply 	// 	回到最近缓存
+git stash apply stash@{1}	// 	回到某一缓存上
+git clear 	// 清空缓存
 
 
 */
