@@ -13,3 +13,14 @@ let ar = {
     },
   ]
 }
+console.log(ar[0].title)
+// function fun(ar) {
+//   return ar.map((item, index) => {
+//     if(item.title){
+//       return 
+//     }
+//     return {
+
+//     }
+//   })
+// }
