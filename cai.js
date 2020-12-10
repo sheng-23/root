@@ -1,8 +1,8 @@
 let ar = [
-  { title: '1234', },
-  { title: '5678', },
+  { title: '123', },
+  { title: '456', },
   {
-    title: '9012',
+    title: '789',
     child: [
       {
         title2: 'zxc',
@@ -17,16 +17,14 @@ let ar = [
   }
 ]
 
-function fun(ar) {
-  let str = ''
-  ar.forEach((item, index) => {
+function fun(ar, br) {
+  return ar.map((item, index) => {
     if(Object.prototype.toString.call(item.child).includes('Array')){
-      fun(item.child)
+      return fun(item.child, item.title)
     }else{
-      str += (item.title || item.title2)
+      return item.title ? item.title: br + '-' + item.title2
     }
   })
-  return str
 }
 let cr = fun(ar)
-console.log(cr)
+console.log(cr.flat(Infinity))
