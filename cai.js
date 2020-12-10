@@ -1,30 +1,29 @@
-let ar = [
-  { title: '123', },
-  { title: '456', },
+let arr = [
+  { 
+    id: '0',
+    title: '123',
+  },
+  { 
+    id: '1',
+    title: '456',
+  },
   {
+    id: '2',
     title: '789',
     child: [
       {
-        title2: 'zxc',
+        id: '2-1',
+        title: 'zxc',
       },
       {
-        title2: 'asd',
+        id: '2-2',
+        title: 'asd',
       },
       {
-        title2: 'qwe',
+        id: '2-3',
+        title: 'qwe',
       },
     ]
   }
 ]
 
-function fun(ar, br) {
-  return ar.map((item, index) => {
-    if(Object.prototype.toString.call(item.child).includes('Array')){
-      return fun(item.child, item.title)
-    }else{
-      return item.title ? item.title: br + '-' + item.title2
-    }
-  })
-}
-let cr = fun(ar)
-console.log(cr.flat(Infinity))
