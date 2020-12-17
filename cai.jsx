@@ -26,39 +26,3 @@ let arr = [
     ]
   }
 ]
-
-(
-  <DoSelect
-    mode="multiple"
-    allowClear
-    showSearch
-    optionFilterProp={'label'}
-    style={{width:'100%'}}
-    onChange={handleChange}
-    placeholder={'请选择服务目录'}
-  >
-    {
-      ar.map(item => {
-        if(!Object.prototype.toString.call(item.child).includes('Array')){
-          return (
-            <DoSelect.Option key={item.id} value={item.title}>
-              {item.title}
-            </DoSelect.Option>
-          )
-        }
-        return (
-          <Fragment key={item.id}>
-            {
-              item.child.map(val => {
-                <DoSelect.Option key={val.id} value={item.title}>
-                  {item.title}
-                </DoSelect.Option>
-              })
-            }
-          </Fragment>
-        )
-      })
-    }
-  </DoSelect>
-
-)
